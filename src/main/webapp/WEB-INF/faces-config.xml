@@ -6,27 +6,27 @@
     version="2.2">
     
     <!-- ManagedBeans Section -->
-	<managed-bean>
-		<managed-bean-name>loginBean</managed-bean-name>
-		<managed-bean-class>com.healthyday.LoginBean</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
-	</managed-bean>
-	<managed-bean>
-		<managed-bean-name>chartViewBean</managed-bean-name>
-		<managed-bean-class>com.healthyday.ChartViewBean</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
-	</managed-bean>
-	
-	
-	
-	<navigation-rule>
-		<display-name>WEB-INF/login.xhtml</display-name>
-		<from-view-id>/WEB-INF/login.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>login</from-outcome>
-			<to-view-id>/WEB-INF/welcome.xhtml</to-view-id>
-			<redirect />
-		</navigation-case>
-	</navigation-rule>
+    <managed-bean>
+        <managed-bean-name>loginBean</managed-bean-name>
+        <managed-bean-class>com.healthyday.LoginBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>chartViewBean</managed-bean-name>
+        <managed-bean-class>com.healthyday.ChartViewBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    
+    
+    
+    <navigation-rule>
+        <display-name>WEB-INF/login.xhtml</display-name>
+        <from-view-id>/WEB-INF/login.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>login</from-outcome>
+            <to-view-id>/WEB-INF/welcome.xhtml</to-view-id>
+            <redirect />
+        </navigation-case>
+    </navigation-rule>
 
 </faces-config>
